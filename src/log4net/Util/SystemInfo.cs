@@ -925,6 +925,7 @@ namespace log4net.Util
 #if NETCF
 				// Configuration APIs are not suported under the Compact Framework
 #else
+            /* HACK erased by asinbow
 			try
 			{
 				return ConfigurationManager.AppSettings[key];
@@ -934,6 +935,7 @@ namespace log4net.Util
 				// If an exception is thrown here then it looks like the config file does not parse correctly.
 				LogLog.Error(declaringType, "Exception while reading ConfigurationSettings. Check your .config file is well formed XML.", ex);
 			}
+            */
 #endif
 			return null;
 		}

@@ -803,7 +803,7 @@ namespace log4net.Core
 
 			// Build Up message
 			sb.Append("log4net assembly [").Append(myAssembly.FullName).Append("]. ");
-			sb.Append("Loaded from [").Append(SystemInfo.AssemblyLocationInfo(myAssembly)).Append("]. ");
+			//sb.Append("Loaded from [").Append(SystemInfo.AssemblyLocationInfo(myAssembly)).Append("]. "); // HACK erased by asinbow
 			sb.Append("(.NET Runtime [").Append(Environment.Version.ToString()).Append("]");
             sb.Append(" on ").Append(Environment.OSVersion.ToString());
             sb.Append(")");
